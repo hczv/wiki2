@@ -1,0 +1,49 @@
+caption: DaemonSets
+created: 20220515160641870
+creator: fwi
+modified: 20220515162150358
+modifier: fwi
+sorting: 8
+tags: [[K8S - Scheduling]]
+title: K8S - DaemonSets
+type: text/vnd.tiddlywiki
+
+DaemonSets are like [[ReplicaSet]] as it helps in deploying multiple instances of pods.
+But it runs 1 cpoy of the pod on each node in the cluster
+
+use cases:
+
+* Monitoring Solution
+* Logs
+* Kube-proxy
+* Networking
+
+the DaemonSet definition looks like the ReplicaSet definition
+
+```yaml
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: monitoring-daemon
+spec:
+  selector:
+    matchLabels:
+      app: monitoring-agent
+  template:
+    metadata:
+      labels:
+        app: monitoring-agent
+    spec:
+      containers:
+      - name: monitoring-agent
+        image: monitoring-agent
+```
+
+commands:
+
+```
+kubectl create -f daemon-set-definition.yaml
+kubectl get daemonsets
+kubectl describe daemonsets <my daemonset>
+```
+

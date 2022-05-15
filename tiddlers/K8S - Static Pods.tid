@@ -1,0 +1,29 @@
+caption: Static Pods
+created: 20220515162250199
+creator: fwi
+modified: 20220515164415347
+modifier: fwi
+sorting: 9
+tags: [[K8S - Scheduling]]
+title: K8S - Static Pods
+type: text/vnd.tiddlywiki
+
+Kubelet can manage a node independendly without any cluster or API server.
+
+Kubelet by default monitors `/etc/kubernetes/manifests` for pod definitions files, and applies all present pod definitions on itself. This only works for pod definitions
+
+It also ensures that the created pod stays alive (by restarting on crash)
+
+if there is made any changes to the definition files in `/etc/kubernetes/manifests`, kubelet recreated the pods, for the changes to take effect. (if you remove a definition file, the pod is deleted)
+
+this "manifest" path is defined to kubelet as an argument, "--pod-manifest-path=/etc/kubernetes/manifests"
+
+another option in defining this path is using the --config=kubeconfig.yaml parameter, and then specifying the path in there as: "staticPodPath: /etc/kubernetes/manifests" (clusters managed by kubeadm uses this approach)
+
+view static pods by using `docker ps`
+
+if the node is part of a cluster and you have created a static pod, it will be visiable through the kubectl command, though only as an readonly pod (the node name will be appended to the pod name viwed through kubectl)
+
+static pod are often used to deploy control plane components to the master servers.
+
+[img[K8S_Static_pods_master_serers.png]]

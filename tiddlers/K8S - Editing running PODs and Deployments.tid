@@ -1,7 +1,7 @@
 caption: Editing running PODs and Deployments
 created: 20220515154408595
 creator: fwi
-modified: 20220515155749728
+modified: 20220515160401294
 modifier: fwi
 sorting: 1
 tags: [[K8S - Quick Notes]]
@@ -44,6 +44,9 @@ if one really wants to edit it,
 
 # create the pod again with `kubectl create -f my_pod.yaml`
 
+<<<
+you can also use `kubectl replace [--force] -f my_pod.yaml`
+<<<
 
 ! Editing Deployments
 
