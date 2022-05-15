@@ -1,0 +1,24 @@
+created: 20220515130253472
+creator: fwi
+modified: 20220515130501649
+modifier: fwi
+tags: $:/tags/ViewTemplate
+title: vt
+type: text/vnd.tiddlywiki
+
+<$list filter="[is[tiddler]is[current]tag[K8S]]">
+<$button tooltip="Create a new contact">Create a new contact
+
+
+<$action-createtiddler $basetitle='New Contact'
+tags='contact'
+firstname=''
+lastname=''
+phone=''
+email=''
+/>
+
+<$action-sendmessage $message="tm-edit-tiddler" />
+
+</$button>
+</$list>

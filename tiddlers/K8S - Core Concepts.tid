@@ -1,0 +1,13 @@
+caption: Core Concepts
+created: 20220515125309634
+creator: fwi
+modified: 20220515130103719
+modifier: fwi
+sorting: 1
+tags: K8S
+title: K8S - Core Concepts
+type: text/vnd.tiddlywiki
+
+<$list filter="[tag[K8S - Core Concepts]sort[sorting]]">
+<$macrocall $name=details label={{!!caption}} src={{!!text}} status=closed/>
+</$list>
