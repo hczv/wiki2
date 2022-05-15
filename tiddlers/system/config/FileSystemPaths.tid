@@ -1,9 +1,0 @@
-created: 20220515144325474
-creator: fwi
-modified: 20220515144536295
-modifier: fwi
-title: $:/config/FileSystemPaths
-type: text/vnd.tiddlywiki
-
-[is[system]!has[draft.of]removeprefix[$:/]addprefix[system/]]
-[is[draft]search-replace:g:regexp[/|\\],[_]addprefix[drafts/]]

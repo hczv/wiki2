@@ -1,3 +1,0 @@
-list: $:/config/FileSystemPaths $:/AdvancedSearch [[K8S - Scheduling]] [[K8S - Node Affinity]] [[K8S - Kube-API Server]] K8S
-title: $:/StoryList
-type: text/vnd.tiddlywiki
