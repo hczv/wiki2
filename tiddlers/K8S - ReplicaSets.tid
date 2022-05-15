@@ -1,0 +1,96 @@
+caption: ReplicaSets
+created: 20220515175026223
+creator: fwi
+modified: 20220515175449465
+modifier: fwi
+sorting: 8
+tags: [[K8S - Core Concepts]]
+title: K8S - ReplicaSets
+type: text/vnd.tiddlywiki
+
+! Replication Controller
+
+Replication controller is an older technologi thas is being replaced with replica sets
+
+rc-definition.yml
+
+```yaml
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: myapp-rc
+  labels:
+    app: myapp
+    type:	front-end
+spec:
+  template:
+    metadata:
+      name: myapp-pod
+      labels:
+        app: myapp
+        type: front-end
+    spec:
+      containers:
+      - name: nginx-container
+        image: nginx
+      replicas: 3
+```
+
+[img[K8S_replication_controller_yaml.png]]
+
+what should be in the template section is the contents of the pod yaml file without `apiVersion` and `kind`
+
+```
+kubectl create -f rc-definition.yml
+kubectl get replicationcontroller
+```
+
+
+! ReplicaSets
+
+replicaset-definition.yml
+
+```yaml
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myapp-replicaset
+  labels:
+    app: myapp
+    type:	front-end
+spec:
+  template:
+    metadata:
+      name: myapp-pod
+      labels:
+        app: myapp
+        type: front-end
+  spec:
+    containers:
+    - name: nginx-container
+      image: nginx
+    replicas: 3
+    selector:
+      matchLabels:
+      type: front-end
+```
+
+```
+kubectl create -f replicaset-definition.yml
+kubectl get replicaset
+```
+
+
+it is possible to change the yaml file, example number of replicas and the replcace the replicaset with
+
+```
+kubectl replace -f replicaset-definition.yml
+```
+
+you can also change number of replicas with
+
+```
+kubectl scale --replicas=6 -f replicaset-definition.yml
+or:
+kubectl scale --replicas=6 replicaset myapp-replicaset
+```

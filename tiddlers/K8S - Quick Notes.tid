@@ -1,7 +1,7 @@
 caption: Quick Notes
 created: 20220515154340833
 creator: fwi
-modified: 20220515154402641
+modified: 20220515170222704
 modifier: fwi
 sorting: 0
 tags: K8S
@@ -12,7 +12,7 @@ type: text/vnd.tiddlywiki
 $(sorting)$ - $(caption)$
 \end
 
-<$list filter="[tag[K8S - Quick Notes]sort[sorting]]">
+<$list filter="[tag[K8S - Quick Notes]nsort[sorting]]">
 <$set name=sorting value={{!!sorting}} >
 <$set name=caption value={{!!caption}} >
 <$macrocall $name=details label=<<create_label>> src={{!!text}} status=closed/>

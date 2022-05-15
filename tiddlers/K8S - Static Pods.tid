@@ -1,7 +1,7 @@
 caption: Static Pods
 created: 20220515162250199
 creator: fwi
-modified: 20220515164415347
+modified: 20220515165757158
 modifier: fwi
 sorting: 9
 tags: [[K8S - Scheduling]]
@@ -18,7 +18,7 @@ if there is made any changes to the definition files in `/etc/kubernetes/manifes
 
 this "manifest" path is defined to kubelet as an argument, "--pod-manifest-path=/etc/kubernetes/manifests"
 
-another option in defining this path is using the --config=kubeconfig.yaml parameter, and then specifying the path in there as: "staticPodPath: /etc/kubernetes/manifests" (clusters managed by kubeadm uses this approach)
+another option in defining this path is using the --config=kubeconfig.yaml parameter, and then specifying the path in there as: "staticPodPath: /etc/kubernetes/manifests" (clusters managed by kubeadm uses this approach `/var/lib/kubelet/config.yaml`)
 
 view static pods by using `docker ps`
 

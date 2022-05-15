@@ -1,0 +1,19 @@
+caption: Kube Proxy
+created: 20220515174850913
+creator: fwi
+modified: 20220515174917066
+modifier: fwi
+sorting: 7
+tags: [[K8S - Core Concepts]]
+title: K8S - Kube Proxy
+type: text/vnd.tiddlywiki
+
+every pod can reach every other pod
+
+internal virtual network (pod network)
+
+create a service, the service gets an ip,
+
+the service dosent join the pod network, its a virtual component. that exsists in configuration.
+
+creates an iptables rule that forwards service specifics configuration

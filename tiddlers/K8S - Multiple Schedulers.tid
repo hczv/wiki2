@@ -1,0 +1,73 @@
+caption: Multiple Schedulers
+created: 20220515165833949
+creator: fwi
+modified: 20220515172224476
+modifier: fwi
+sorting: 10
+tags: [[K8S - Scheduling]]
+title: K8S - Multiple Schedulers
+type: text/vnd.tiddlywiki
+
+a kubernetes cluster isnt limited to a single scheduler, it's possible to develop your own scheduler to customize desired behaviour,
+
+example scheduler:
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kube-scheduler
+  namespace: kube-system
+spec:
+  containers:
+  - command:
+    - kube-scheduler
+    - --addres=127.0.0.1
+    - --kubeconfig=/etc/kubernetes/scheduler.conf
+    - --leader-elect=true
+    name: k8s.grc.io/kube-scheduler-amd64:v1.11.3
+```
+
+another scheduler that works besides the first one:
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-custom-scheduler
+  namespace: kube-system
+spec:
+  containers:
+  - command:
+    - kube-scheduler
+    - --addres=127.0.0.1
+    - --kubeconfig=/etc/kubernetes/scheduler.conf
+    - --leader-elect=true
+    - --sceduler-name=my-custom-scheduler
+    - --lock-object-name=my-custom-scheduler
+    name: k8s.grc.io/kube-scheduler-amd64:v1.11.3
+```
+
+if multiple instances of the same scheduler is active, the leader-elect option is important, since only one instance of a scheduler can be active at a time. though you can define multiple unique schedulers to get more that one scheduler
+
+the `--lock-object-name` parameter is used to differenciate the custom scheduler apart from the default scheduler during the election process
+
+to use a custom scheduler you need to specify it in the pod definition file
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  schedulerName: my-custom-scheduler
+```
+
+view the custom scheduler working with `kubectl get events` and `kubectl logs my-custom-scheduler -n kube-system`
+
+[img[K8S_custom_scheduler_events.png]]
+
+[img[K8S_custom_scheduler_logs.png]]

@@ -1,0 +1,31 @@
+caption: Deployments
+created: 20220515175512564
+creator: fwi
+modified: 20220515175650910
+modifier: fwi
+sorting: 9
+tags: [[K8S - Core Concepts]]
+title: K8S - Deployments
+type: text/vnd.tiddlywiki
+
+! Deployments
+
+[[K8S - Deployment example.yaml]]
+
+[[K8S - Deployment example2.yaml]]
+
+```
+kubectl create -f deployment_example.yaml
+kubectl get deployments
+kubectl get replicasets
+kubectl get all
+```
+
+[img[K8S_deployments.png]]
+
+example of creating deployment in a single command
+
+```
+kubectl create deployment httpd-frontend --image=httpd:2.4-alpine
+kubectl scale deployment --replicas=3 httpd-frontend
+```

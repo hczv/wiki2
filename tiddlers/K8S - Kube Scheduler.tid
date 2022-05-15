@@ -1,0 +1,21 @@
+caption: Kube Scheduler
+created: 20220515174609022
+creator: fwi
+modified: 20220515174735225
+modifier: fwi
+sorting: 5
+tags: [[K8S - Core Concepts]]
+title: K8S - Kube Scheduler
+type: text/vnd.tiddlywiki
+
+responsible for deciding which pod goes where
+
+dosent reploy any pods tho, only defines it in ETCD
+
+2 phases
+
+1. filter nodes // example not enough resources //
+
+2. ranks nodes // based on which node has the most resources free after deployment //
+
+in debth [[K8S - Scheduling]]

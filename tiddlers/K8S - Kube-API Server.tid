@@ -1,9 +1,47 @@
 caption: Kube-API Server
 created: 20220515134413495
 creator: fwi
-modified: 20220515134452389
+modified: 20220515174345335
 modifier: fwi
-sorting: 2
+sorting: 3
 tags: [[K8S - Core Concepts]]
 title: K8S - Kube-API Server
 type: text/vnd.tiddlywiki
+
+Primary management component in kubernetes
+
+when using a kubectl command, it communicates with the kube-api 
+
+process for kubectl command:
+
+1. authenticates request and validates it
+
+2. retrives data from etcd cluster and respondes back with the requested information
+
+it isnt nessasery to use the kubectl command, its possible to invoke api with post requests
+
+process with a change is made
+
+[img[K8S_a_change_is_made.png]]
+
+kubectl --> kube-apiserver --> ETCD
+kube-scheduler --> kube-apiserver --> ETCD --> kube-scheduler --> kube-apiserver --> kubelet
+
+
+Kube-api server is the only componenet that interacts with the ETCD datastore
+
+possible to deploy with two methods: manual and kubeadm like [[v12. ETCD in Kubernetes]]
+
+view api-server options in file:
+
+`/etc/kubernetes/manifests/kube-apiserver.yaml`
+
+and systemd service file
+
+`/etc/systemd/system/kube-apiserver.service`
+
+effective options of kube-apiserver:
+
+`ps -aux | grep kube-apiserver`
+
+[img[K8S_kube_apiserver_options.png]]

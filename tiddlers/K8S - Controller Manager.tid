@@ -1,0 +1,47 @@
+caption: Controller Manager
+created: 20220515174351829
+creator: fwi
+modified: 20220515174533748
+modifier: fwi
+sorting: 4
+tags: [[K8S - Core Concepts]]
+title: K8S - Controller Manager
+type: text/vnd.tiddlywiki
+
+component that continuesly monitores states of various components (watch status, remediate situation)
+
+* node controller
+** monitores states of notes, and takes nessasery actions to keep the application running
+** works through kube-apiserver
+** takes the state of the nodes every 5 sec
+** grace period of 40 secound of no heart beats before marking as unreachable
+** after a node is marked unreachable, it has 5 min to come back up
+** if it dosent it removes the pods assigned to that node as provisions them to a healthy one
+
+* replication-controller
+** ensures that the desired number of pods is present/available at all times
+** if a pod dies, it creates another one
+
+* namespace-controller
+
+* deployment-controller
+
+* endpoint-controller
+
+* job-controller
+
+* PV-protection-controller
+
+* PV-Binder-controller
+
+* Service-account-controller
+
+* stateful-set
+
+* replicaset
+
+* cronJob
+
+[img[K8S_kube_controller_manager_service.png]]
+
+[img[K8S_kube_controller_manager_controllers.png]]

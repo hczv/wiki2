@@ -1,0 +1,17 @@
+caption: Kubelet
+created: 20220515174803663
+creator: fwi
+modified: 20220515174840705
+modifier: fwi
+sorting: 6
+tags: [[K8S - Core Concepts]]
+title: K8S - Kubelet
+type: text/vnd.tiddlywiki
+
+a kubelet runs on each node and is responsible for their respective nodes
+
+registere node to the cluster
+
+reports to the kube-apiserver
+
+needs to be manually installed as a service on each node

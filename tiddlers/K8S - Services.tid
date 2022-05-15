@@ -1,0 +1,118 @@
+caption: Services
+created: 20220515180103899
+creator: fwi
+modified: 20220515180415459
+modifier: fwi
+sorting: 11
+tags: [[K8S - Core Concepts]]
+title: K8S - Services
+type: text/vnd.tiddlywiki
+
+! Services
+
+services handles connection between:
+users -> pods, pods -> pods
+
+
+!! NodePort
+
+forwards traffic to the pod on specified port
+
+[img[K8S_services_nodeport.png]]
+
+```yaml
+apiVersion: v1
+kine: Service
+metadata:
+  name: myapp-service
+spec:
+  type: NodePort
+  ports:
+    - targetPort: 80
+      port: 80
+      nodePort: 30008
+  selector:
+    app: myapp
+    type: front-end
+```
+the selector app and type, is copied from the pod metadata, this is used to specify which pod the targetPort should reach
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: webapp-service
+spec:
+  type: NodePort
+  ports:
+    - targetPort: 8080
+      port: 8080
+      nodePort: 30080
+  selector:
+    name: simple-webapp
+```
+
+```
+kubectl create -f services-NodePort-example.yaml
+kubectl get services
+```
+
+```
+kubectl expose deployment simple-webapp-deployment --name=webapp-service --target-port=8080 --type=NodePort --port=8080 --dry-run=client -o yaml > nodeport.yaml
+```
+
+if there is multiple pods matching the selector on the same node the nodeport (perhaps replicas) will loadbalance traffic between pods in a random fashion with "sessionAffinity"
+
+a nodeport gets mapped on each node in the cluster, so the service spans the entire cluster and makes it possible to reach the service through any node on the specified NodePort
+
+
+
+!! ClusterIP
+
+used to facilitate connection between pods,
+
+makes it possible to group pods to be reachable through a single. 
+
+
+```yaml
+apiVersion: v1
+kine: Service
+metadata:
+  name: back-end
+spec:
+  type: ClusterIP
+  ports:
+    - targetPort: 80 // backend is exposed
+      port: 80  // port where the service is exposed
+  selector:
+    app: myapp
+    type: front-end
+```
+
+```
+kubectl create -f services-Cluster-IP-example.yaml
+kubectl get services
+```
+
+!! LoadBalancer
+
+used in the front-end. and used to integrate with cloud provider provided load balancer
+
+
+```yaml
+apiVersion: v1
+kine: Service
+metadata:
+  name: myapp-service
+spec:
+  type: LoadBalancer
+  ports:
+    - targetPort: 80
+      port: 80
+      nodePort: 30008
+  selector:
+    app: myapp
+    type: front-end
+```
+
+if this is used on an unsupported infrastructure it will act as nodePort

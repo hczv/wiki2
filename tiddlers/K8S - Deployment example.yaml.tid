@@ -1,0 +1,31 @@
+created: 20220515175717121
+creator: fwi
+modified: 20220515175725171
+modifier: fwi
+title: K8S - Deployment example.yaml
+type: text/vnd.tiddlywiki
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-deployment
+    labels:
+      app: myapp
+      type: front-end
+sepc:
+  template:
+    metadata:
+      name: myapp-pod
+    labels:
+      app: myapp
+      type: front-end
+      spec:
+        containers:
+          - name: nginx-container
+            image: nginx
+    replicas: 3
+    selector:
+      matchLabels:
+        type: front-end
+```

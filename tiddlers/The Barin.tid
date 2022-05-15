@@ -1,10 +1,10 @@
-caption: TheBrain
-created: 20211220184056323
-creator: Sttot
-modified: 20220515152157912
+caption: The Barin
+created: 20220515173020783
+creator: fwi
+modified: 20220515173053511
 modifier: fwi
 tags: $:/tags/SideBar
-title: TheBrain
+title: The Barin
 type: text/vnd.tiddlywiki
 
 <$echarts $tiddler="$:/plugins/Gk0Wk/echarts/addons/TheBrain.js" aliasField="caption" levels="2" graphTitle="The Barin View"/>

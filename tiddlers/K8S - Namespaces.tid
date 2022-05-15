@@ -1,0 +1,90 @@
+caption: Namespaces
+created: 20220515175823379
+creator: fwi
+modified: 20220515180035912
+modifier: fwi
+sorting: 10
+tags: [[K8S - Core Concepts]]
+title: K8S - Namespaces
+type: text/vnd.tiddlywiki
+
+! Namespaces
+
+default namespaces: Default, kube-system, kube-public
+
+kube-system: has operational services like kubeapi
+
+kube-public: has services that should be accessable from all namespaces
+
+
+can define permissions per namespace, and resource limits
+
+to connect to services in internal and external namespaces:
+
+```
+mysql.connect("pod_name") // internal namespace
+mysql.connect("pod_name.dev.svc.cluster.local") // external namespace called dev
+```
+
+`cluster.local` is the default domain name of kubernetes cluster
+
+`svc` is the subdomain for service
+
+```
+kubectl get pods --namespace=kube-system
+kubectl create -f pod-definition.yaml --namespace=dev
+```
+
+it is possible to specify the namespace in the yaml file under metadata:
+
+```yaml
+metadata:
+  name: mypod
+  namespace: dev
+  labels....
+```
+
+to create a namespace
+
+```yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: dev
+```
+
+```
+kubectl create -f namespace-example.yaml
+or
+kubectl create namespace dev
+```
+
+change namespace
+
+```
+kubectl config set-context $(kubectl config current-context) --namespace=dev
+
+kubectl get pods --all-namespaces
+```
+
+
+!! Resource Quota
+
+```yaml
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: compute-quota
+  namespace: dev
+spec:
+  hard:
+    pods: "10"
+    requests.cpu: "4"
+    requests.memory: 5Gi
+    limits.cpu: "10"
+    limits.memory: 10Gi
+```
+
+```
+kubectl create -f namespace-resource-quota-example.yaml
+```

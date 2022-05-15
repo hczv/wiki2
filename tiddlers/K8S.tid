@@ -1,6 +1,7 @@
 created: 20220515122537809
 creator: fwi
-modified: 20220515145433567
+icon: 
+modified: 20220515170559399
 modifier: fwi
 tags: 
 title: K8S
@@ -40,6 +41,17 @@ $(sorting)$ - $(caption)$
 
 !!!! Useful commands
 
+
+<$macrocall $name=details label="create pod" src="""
+```
+with command and args
+kubectl run my_pod --image=nginx --dry-run=client --command -- sleep 1000
+```
+
+""" status=closed/>
+
+
+
 !!!! Url list
 
  [[https://kubernetes.io/docs/reference/kubectl/conventions/]]
@@ -47,7 +59,7 @@ $(sorting)$ - $(caption)$
  [[https://collabnix.github.io/kubetools/]]
 
 
-<$list filter="[tag[K8S]sort[sorting]]">
+<$list filter="[tag[K8S]nsort[sorting]]">
 <$set name=sorting value={{!!sorting}} >
 <$set name=caption value={{!!caption}} >
 <h2> <<create_label>> </h2>
