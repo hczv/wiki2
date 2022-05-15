@@ -1,15 +1,13 @@
 caption: Core Concepts
 created: 20220515125908046
 creator: fwi
-modified: 20220515130035878
+modified: 20220515131345701
 modifier: fwi
 sorting: 2
 tags: K8S
 title: K8S - Scheduling
 type: text/vnd.tiddlywiki
 
-<$list filter="[tag[K8S - Scheduling]]">
+<$list filter="[tag[K8S - Scheduling]sort[sorting]]">
 <$macrocall $name=details label={{!!caption}} src={{!!text}} status=closed/>
 </$list>
-
-12321312312312312312
