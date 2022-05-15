@@ -1,14 +1,14 @@
 caption: DaemonSets
 created: 20220515160641870
 creator: fwi
-modified: 20220515162150358
+modified: 20220515183718261
 modifier: fwi
 sorting: 8
 tags: [[K8S - Scheduling]]
 title: K8S - DaemonSets
 type: text/vnd.tiddlywiki
 
-DaemonSets are like [[ReplicaSet]] as it helps in deploying multiple instances of pods.
+DaemonSets are like [[K8S - ReplicaSets]] as it helps in deploying multiple instances of pods.
 But it runs 1 cpoy of the pod on each node in the cluster
 
 use cases:
