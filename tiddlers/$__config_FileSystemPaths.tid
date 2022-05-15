@@ -1,0 +1,9 @@
+created: 20220515145000766
+creator: fwi
+modified: 20220515145004923
+modifier: fwi
+tags: $:/plugins/linonetwo/sub-wiki/readme
+title: $:/config/FileSystemPaths
+type: text/vnd.tiddlywiki
+
+[is[draft]search-replace:g:regexp[/|\\],[_]addprefix[drafts/]]
