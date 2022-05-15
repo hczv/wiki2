@@ -1,7 +1,7 @@
 caption: Node Affinity
 created: 20220515134639767
 creator: fwi
-modified: 20220515140523689
+modified: 20220515144001550
 modifier: fwi
 sorting: 5
 tags: [[K8S - Scheduling]]
@@ -13,6 +13,8 @@ type: text/vnd.tiddlywiki
 is used decide which node a pod should run on. This is also possible with [[K8S - Node Selectors]], but it has limitations on complexity
 
 This spec does the same as the spec in Node Selectors page
+
+!! Examples
 
 ```yaml
 spec:
@@ -49,3 +51,12 @@ you could check if a label exists on a node as a condition for using that node
 - key: size
   operator: Exists
 ```
+
+!! Node affinity types
+
+in cases where exceptions happen, like the specified label is missing in the cluster, the affinity type handles what happens next.
+
+* requiredDuringSchedulingIgnoredDuringExecution
+* preferredDuringSchedulingIgnoredDuringExecution
+* RequiredDuringSchedulingRequiredDuringExecution (planned)
+
