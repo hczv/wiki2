@@ -1,0 +1,13 @@
+author: Gk0Wk
+core-version: >=5.2.0
+dependents: $:/plugins/felixhayashi/hotzone
+description: ECharts for TiddlyWiki5
+list: readme LICENSE
+modified: 20220515144536299
+modifier: fwi
+name: ECharts
+plugin-type: plugin
+source: https://github.com/tiddly-gittly/tw-echarts/tree/master/plugins/Gk0Wk/echarts
+title: $:/plugins/Gk0Wk/echarts
+type: application/json
+version: 0.0.9

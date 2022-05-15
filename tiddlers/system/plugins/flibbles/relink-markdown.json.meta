@@ -1,0 +1,15 @@
+author: Flibbles
+core-version: >=5.1.22
+created: 20211101182239039
+dependents: 
+description: Markdown support for Relink
+list: readme
+modified: 20220515144536298
+modifier: fwi
+name: Relink Markdown
+parent-plugin: $:/plugins/flibbles/relink
+plugin-type: plugin
+source: https://github.com/flibbles/tw5-relink
+title: $:/plugins/flibbles/relink-markdown
+type: application/json
+version: 2.1.0

@@ -1,0 +1,10 @@
+dependents: 
+description: CodeMirror editor
+list: readme usage keyboard license
+modified: 20220515144536307
+modifier: fwi
+name: CodeMirror
+plugin-type: plugin
+title: $:/plugins/tiddlywiki/codemirror
+type: application/json
+version: 5.2.1

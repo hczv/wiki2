@@ -1,0 +1,11 @@
+dependents: 
+description: Sync changes from the browser to TW5 (node.js) or TiddlyWeb server
+list: readme
+modified: 20220515144536310
+modifier: fwi
+name: TiddlyWeb
+plugin-priority: 10
+plugin-type: plugin
+title: $:/plugins/tiddlywiki/tiddlyweb
+type: application/json
+version: 5.2.3-prerelease-2022-04-09
