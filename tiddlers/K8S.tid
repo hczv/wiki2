@@ -1,7 +1,7 @@
 created: 20220515122537809
 creator: fwi
 icon: 
-modified: 20220515170559399
+modified: 20220515181246866
 modifier: fwi
 tags: 
 title: K8S
@@ -13,7 +13,7 @@ $(sorting)$ - $(caption)$
 
 ! Kubernetes
 
-<<details label:"name shortening table" src:"""| Short name | Full name                  |
+<<details label:"k8s short names" src:"""| Short name | Full name                  |
 | csr        | certificatesigningrequests |
 | cs         | componentstatuses          |
 | cm         | configmaps                 |
