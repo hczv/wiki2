@@ -1,0 +1,51 @@
+caption: Node Affinity
+created: 20220515134639767
+creator: fwi
+modified: 20220515140523689
+modifier: fwi
+sorting: 5
+tags: [[K8S - Scheduling]]
+title: K8S - Node Affinity
+type: text/vnd.tiddlywiki
+
+!! desc
+
+is used decide which node a pod should run on. This is also possible with [[K8S - Node Selectors]], but it has limitations on complexity
+
+This spec does the same as the spec in Node Selectors page
+
+```yaml
+spec:
+  affinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: size
+          operator: in
+          values:
+          - Large
+```
+
+if the pod could run on a "Large" and "Medium" node, it's possible to define both in above yaml like this:
+
+```yaml
+values:
+- Large
+- Medium
+```
+
+or to exclude values, use the "NotIn" operator:
+
+```yaml
+- key: size
+  operator: NotIn
+  values:
+  - Small
+```
+
+you could check if a label exists on a node as a condition for using that node
+
+```yaml
+- key: size
+  operator: Exists
+```

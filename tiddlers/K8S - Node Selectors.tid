@@ -1,0 +1,31 @@
+caption: Node Selectors
+created: 20220515134948859
+creator: fwi
+modified: 20220515135017732
+modifier: fwi
+sorting: 4
+tags: [[K8S - Scheduling]]
+title: K8S - Node Selectors
+type: text/vnd.tiddlywiki
+
+!! desc
+
+makes it possible to differenciate between nodes, and decide where a pod should be deployed based on it, for example a pod with alot of cpu requirements should be run on the node with the possibility to provide it
+
+node selectors have limitations, it isnt possible to have complex rules, like "run on any node that isnt size=small". (dosent support OR or NOT expressions)
+
+
+!! label nodes
+
+```bash
+kubectl label nodes nodeName key=value
+kubectl label nodes node01 size=Large
+```
+
+!! deploy pods based on node labels
+
+```yaml
+spec:
+  nodeSelector:
+    size: Large
+```
