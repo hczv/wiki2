@@ -1,0 +1,11 @@
+caption: Node Affinity vs Taints and Tolerations
+created: 20220515145751077
+creator: fwi
+modified: 20220515151427470
+modifier: fwi
+sorting: 6
+tags: [[K8S - Scheduling]]
+title: K8S - Node Affinity vs Taints and Tolerations
+type: text/vnd.tiddlywiki
+
+for node affinity and taints and tolerations it is possible to use either on a node, or both at the same time to get further granular control over the infrastructure. They can be setup to compliment eachother

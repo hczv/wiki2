@@ -1,0 +1,58 @@
+caption: Taints and Tolerations
+created: 20220515150112593
+creator: fwi
+modified: 20220515150243383
+modifier: fwi
+sorting: 3
+tags: [[K8S - Scheduling]]
+title: K8S - Taints and Tolerations
+type: text/vnd.tiddlywiki
+
+!! Point
+
+The point of tains and tolerations is to have fine grained control over where each pod will be placed in the cluster, it's possible to mark nodes with "taints" which by default will make sure that no pods will run on it, since all pods by default are intolerant.
+
+one can further configure pods to be tolerant to taints, with allow pods to run on node with the taints its tolerant to.
+
+when the k8s cluster is first setup, a taint is set on the master node automatically that prevents any pods from being scheduled on the node
+
+`kubectl describe node kubemaster | grep Taint`
+
+tains and tolerations are only meant to restrict nodes from accepting certain pods
+
+!! taint command
+
+```bash
+kubectl taint nodes nodeName key=value:taint-effect
+kubectl taint nodes node01 app=green:NoSchedule
+```
+
+to remove a taint run the same sommand with a minus at the end (-)
+
+`kubectl taint nodes nodeName app=green:NoSchedule-`
+
+!!! taint effects
+
+There are three taint-effect options:
+
+* NoSchedule
+** pods will no be scheduled on the node
+* PreferNoSchedule
+** try to not schedule pods on the node (no gurantee)
+* NoExecute
+** same as NoSchedule, though it also evicts already running pods.
+
+!! tolerations
+
+```yaml
+spec:
+  tolerations:
+  - key: "app"
+    operator: "Equeal"
+    value: "green"
+    effect: "NoSchedule"
+```
+
+`kubectl explain pods --recursive | less`
+
+remember to use double qoutes

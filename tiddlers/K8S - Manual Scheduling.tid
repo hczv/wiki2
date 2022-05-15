@@ -1,0 +1,23 @@
+caption: Manual Scheduling
+created: 20220515150727740
+creator: fwi
+modified: 20220515151442745
+modifier: fwi
+sorting: 1
+tags: [[K8S - Scheduling]]
+title: K8S - Manual Scheduling
+type: text/vnd.tiddlywiki
+
+All pods have a spec field called nodeName, which by default is not set. Though it can be set manually.
+
+Kubernetes looks for pods with nodeName not set, these pods are candidates for scheduling. once the scheduler has decided which node the pod should run on, it sets the nodeName property to the name of the node that the pod will run on
+
+if there isnt a scheduler present in k8s, you have to set the nodeName field to specify which node the pod should run on, in pod creation. it cannot be changed when the pod is running
+
+the method to move an already running pod to another node (without a scheduler) is to make an api request to the binding api
+
+[img[k8s_manual_scheduling_binding_api.png]]
+
+convert the yaml to it's json format and make an api call.
+
+[img[k8s_manual_scheduling_binding_api_request.png]]

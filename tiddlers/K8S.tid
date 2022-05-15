@@ -1,6 +1,6 @@
 created: 20220515122537809
 creator: fwi
-modified: 20220515140048123
+modified: 20220515145433567
 modifier: fwi
 tags: 
 title: K8S
@@ -11,6 +11,7 @@ $(sorting)$ - $(caption)$
 \end
 
 ! Kubernetes
+
 <<details label:"name shortening table" src:"""| Short name | Full name                  |
 | csr        | certificatesigningrequests |
 | cs         | componentstatuses          |
@@ -37,9 +38,9 @@ $(sorting)$ - $(caption)$
 """ status:"closed" >>
 
 
-!! Useful commands
+!!!! Useful commands
 
-!! Url list
+!!!! Url list
 
  [[https://kubernetes.io/docs/reference/kubectl/conventions/]]
  
