@@ -37,7 +37,25 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Labels%2520and%2520Selectors</loc>
+		<lastmod>2022-05-15</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Manual%2520Scheduling</loc>
+		<lastmod>2022-05-15</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Node%2520Affinity</loc>
+		<lastmod>2022-05-15</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Node%2520Affinity%2520vs%2520Taints%2520and%2520Tolerations</loc>
 		<lastmod>2022-05-15</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
@@ -51,6 +69,37 @@
 	<url>
 		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Scheduling</loc>
 		<lastmod>2022-05-15</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Taints%2520and%2520Tolerations</loc>
+		<lastmod>2022-05-15</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:k8s_labels_replicaset.png</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:k8s_labels.png</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:k8s_manual_scheduling_binding_api_request.png</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:k8s_manual_scheduling_binding_api.png</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:k8s_selector.png</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
