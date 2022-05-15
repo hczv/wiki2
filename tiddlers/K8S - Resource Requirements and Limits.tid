@@ -1,0 +1,82 @@
+caption: Resource Requirements and Limits
+created: 20220515152319693
+creator: fwi
+modified: 20220515154219350
+modifier: fwi
+sorting: 7
+tags: [[K8S - Scheduling]]
+title: K8S - Resource Requirements and Limits
+type: text/vnd.tiddlywiki
+
+if there is no sufficient resources available for a pod,
+the kubernetes scheduler holds back on scheduling the pod, and sets in a pending state.
+
+defaults resource requirements for a container:
+
+* CPU: .5
+* RAM: 256 Mi
+
+defaults resource limits for a container:
+
+* CPU: 1
+* RAM: 512 Mi
+
+These limits are only present if a LimitRange with defaults has been defined:
+
+```yaml
+    apiVersion: v1
+    kind: LimitRange
+    metadata:
+      name: mem-limit-range
+    spec:
+      limits:
+      - default:
+          memory: 512Mi
+        defaultRequest:
+          memory: 256Mi
+        type: Container
+
+    apiVersion: v1
+    kind: LimitRange
+    metadata:
+      name: cpu-limit-range
+    spec:
+      limits:
+      - default:
+          cpu: 1
+        defaultRequest:
+          cpu: 0.5
+        type: Container
+```
+
+[[https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-default-namespace/]] 
+
+
+[[https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/cpu-default-namespace/]] 
+
+
+[[https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource]]
+
+
+
+it's possible to override the defualt pod resources requirements & limits by specifying it in the yaml file
+
+```yaml
+spec:
+  containers:
+  - name: my-pod
+    image: nginx
+    resources:
+      requests:
+        memory: "1Gi"
+        cpu: 1
+      limits:
+        memory: "2Gi"
+        cpu: 2
+```
+
+what does .5 CPU mean? .5 = 500m (mili) (lowest value = 1m)
+1 CPU = 1 vCPU
+
+the container is limited by the cpu limit, but not the memory limit
+if a pod continuesly tries to exceed the memory limit, the pod will be terminated

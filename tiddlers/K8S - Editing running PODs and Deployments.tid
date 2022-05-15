@@ -1,0 +1,29 @@
+caption: Editing running PODs and Deployments
+created: 20220515154408595
+creator: fwi
+modified: 20220515155118235
+modifier: fwi
+sorting: 1
+tags: [[K8S - Quick Notes]]
+title: K8S - Editing running PODs and Deployments
+type: text/vnd.tiddlywiki
+
+you cannot edit specifications of a running other than these:
+
+* spec.containers[*].image
+* spec.initContainers[*].image
+* spec.activeDeadlineSeconds
+* spec.tolerations
+
+it isnt possible to edit stuff like, env variables, service accounts, resource limits of a running pod
+
+if one really wants to edit it. do:
+
+# edit pod: `kubectl edit pod <pod name>`
+
+* edit what you need, and save, you will get a permission denied. This will happen if you tried to edit a spec in the container that isnt editable.
+
+* a copy of the changes will be saved to a tmp file like `/tmp/kubectl-edit-xxxxx.yaml`
+
+# delete the pod `kubectl delete pod <pod name>`
+

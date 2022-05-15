@@ -1,0 +1,21 @@
+caption: Quick Notes
+created: 20220515154340833
+creator: fwi
+modified: 20220515154402641
+modifier: fwi
+sorting: 0
+tags: K8S
+title: K8S - Quick Notes
+type: text/vnd.tiddlywiki
+
+\define create_label()
+$(sorting)$ - $(caption)$
+\end
+
+<$list filter="[tag[K8S - Quick Notes]sort[sorting]]">
+<$set name=sorting value={{!!sorting}} >
+<$set name=caption value={{!!caption}} >
+<$macrocall $name=details label=<<create_label>> src={{!!text}} status=closed/>
+</$set>
+</$set>
+</$list>
