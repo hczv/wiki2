@@ -1,25 +1,38 @@
 created: 20220515130253472
 creator: fwi
-modified: 20220515131319635
+modified: 20220515190414220
 modifier: fwi
 tags: $:/tags/ViewTemplate
 title: vt
 type: text/vnd.tiddlywiki
 
 <!--
-
 \define tags()
 [[$(tag)$]]
 \end
+
+\define unique-state()
+$:/status/1
+\end
+
+\define unique-title()
+K8S - {{$state$!!text}}
+\end
+
+
 <$set name="tag" value={{!!title}}>
-
+<$set name="title" value=<<unique-title>> >
+<$set name="state" value=<<unique-state>> >
 <$list filter="[is[tiddler]is[current]tag[K8S]]">
-
-<$button tooltip="Create a new contact">
-<$action-createtiddler $basetitle='567' tags=<<tags>>>
-Create new subject!
+<$button>
+<$action-sendmessage $message="tm-new-tiddler" title=<<title>> tags=<<tags>> text=<<now "Today is DDth, MMM YYYY">>/>
+Create new title!
 </$button>
 
+<$edit-text tiddler=<<state>> size=20 tag=input default="Type name here" />
+[[vt]]
 </$list>
-
-<$/set>-->
+</$set>
+</$set>
+</$set>
+-->
