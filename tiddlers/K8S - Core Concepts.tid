@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 1
 tags: K8S
 title: K8S - Core Concepts
+tmap.id: 69103445-bd8c-4097-938a-fe1d00d585ad
 type: text/vnd.tiddlywiki
 
 \define create_label()

@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 4
 tags: [[K8S - Core Concepts]]
 title: K8S - Controller Manager
+tmap.id: 8d05a455-5a74-495a-a6ca-ebfddb5714c5
 type: text/vnd.tiddlywiki
 
 component that continuesly monitores states of various components (watch status, remediate situation)

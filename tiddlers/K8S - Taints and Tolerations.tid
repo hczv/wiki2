@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 3
 tags: [[K8S - Scheduling]]
 title: K8S - Taints and Tolerations
+tmap.id: 3adb9f9c-4546-42bd-abf2-6b1bed6180c9
 type: text/vnd.tiddlywiki
 
 !! Point

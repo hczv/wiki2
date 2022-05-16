@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 1
 tags: [[K8S - Quick Notes]]
 title: K8S - Editing running PODs and Deployments
+tmap.id: cffca4b3-951e-4bb3-9078-1e0eda422996
 type: text/vnd.tiddlywiki
 
 ! Editing pods

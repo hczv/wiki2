@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 8
 tags: [[K8S - Core Concepts]]
 title: K8S - ReplicaSets
+tmap.id: 9c46f10a-c4a9-405e-80b5-7f72cd34e2ba
 type: text/vnd.tiddlywiki
 
 ! Replication Controller

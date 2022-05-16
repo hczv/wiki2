@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 5
 tags: [[K8S - Core Concepts]]
 title: K8S - Kube Scheduler
+tmap.id: 97a8206a-be3c-4af7-94e5-fc50c0810e5d
 type: text/vnd.tiddlywiki
 
 responsible for deciding which pod goes where

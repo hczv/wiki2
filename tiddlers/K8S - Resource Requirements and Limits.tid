@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 7
 tags: [[K8S - Scheduling]]
 title: K8S - Resource Requirements and Limits
+tmap.id: 4c9f2997-e8b0-48d7-8d90-006d884a4563
 type: text/vnd.tiddlywiki
 
 if there is no sufficient resources available for a pod,

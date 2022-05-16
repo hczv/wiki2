@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 10
 tags: [[K8S - Core Concepts]]
 title: K8S - Namespaces
+tmap.id: f3427523-cbd5-4ef6-a26d-a59adfeddb38
 type: text/vnd.tiddlywiki
 
 ! Namespaces

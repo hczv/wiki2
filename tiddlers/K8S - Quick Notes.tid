@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 0
 tags: K8S
 title: K8S - Quick Notes
+tmap.id: f0a3e835-7fbd-44a7-9314-5c33d1ed4214
 type: text/vnd.tiddlywiki
 
 \define create_label()

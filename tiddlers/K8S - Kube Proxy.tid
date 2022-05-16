@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 7
 tags: [[K8S - Core Concepts]]
 title: K8S - Kube Proxy
+tmap.id: 4d6c541a-26d2-4d9a-898f-56d3679f9705
 type: text/vnd.tiddlywiki
 
 every pod can reach every other pod

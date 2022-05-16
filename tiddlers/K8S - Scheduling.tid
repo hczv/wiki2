@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 2
 tags: K8S
 title: K8S - Scheduling
+tmap.id: 3b2cab8e-27bb-4b54-81db-5fe1ca94d425
 type: text/vnd.tiddlywiki
 
 \define create_label()

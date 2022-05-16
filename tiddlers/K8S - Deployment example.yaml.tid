@@ -1,8 +1,10 @@
+caption: Deployment example.yaml
 created: 20220515175717121
 creator: fwi
-modified: 20220515175725171
-modifier: fwi
+modified: 20220516120703115
+modifier: fw
 title: K8S - Deployment example.yaml
+tmap.id: 6b335341-c91f-4bdc-8d19-8e50604eea30
 type: text/vnd.tiddlywiki
 
 ```yaml

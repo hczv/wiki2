@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 1
 tags: [[K8S - Scheduling]]
 title: K8S - Manual Scheduling
+tmap.id: dafe702c-f35a-4350-9529-b5340dae1ff4
 type: text/vnd.tiddlywiki
 
 All pods have a spec field called nodeName, which by default is not set. Though it can be set manually.

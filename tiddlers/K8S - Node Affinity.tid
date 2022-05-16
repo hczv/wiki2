@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 5
 tags: [[K8S - Scheduling]]
 title: K8S - Node Affinity
+tmap.id: cb5dff43-5bb1-483c-87f3-b9c24b030c31
 type: text/vnd.tiddlywiki
 
 !! desc

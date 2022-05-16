@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 2
 tags: [[K8S - Core Concepts]]
 title: K8S - ETCD in Kubernetes
+tmap.id: 8509e13e-d871-49e3-93c2-aa8186ecc650
 type: text/vnd.tiddlywiki
 
 All information gotten from the (kubectl/kubeadm) command is from the ETCD server

@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 9
 tags: [[K8S - Core Concepts]]
 title: K8S - Deployments
+tmap.id: df5349d6-c5ba-404d-b33b-e3c53c111d5a
 type: text/vnd.tiddlywiki
 
 ! Deployments

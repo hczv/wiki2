@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 6
 tags: [[K8S - Core Concepts]]
 title: K8S - Kubelet
+tmap.id: cabf15ab-d6ae-4dca-b16e-e672d0d3f2d3
 type: text/vnd.tiddlywiki
 
 a kubelet runs on each node and is responsible for their respective nodes

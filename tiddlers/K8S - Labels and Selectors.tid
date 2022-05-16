@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 2
 tags: [[K8S - Scheduling]]
 title: K8S - Labels and Selectors
+tmap.id: 846544aa-f348-48e8-b9f3-2fa1869ce256
 type: text/vnd.tiddlywiki
 
 Lables is defined pr pod, under the metadata section, in a key value format.

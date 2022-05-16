@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 8
 tags: [[K8S - Scheduling]]
 title: K8S - DaemonSets
+tmap.id: c9e0d80c-b16b-4dda-bcd7-0b3cc57b33c5
 type: text/vnd.tiddlywiki
 
 DaemonSets are like [[K8S - ReplicaSets]] as it helps in deploying multiple instances of pods.

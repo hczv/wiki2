@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 10
 tags: [[K8S - Scheduling]]
 title: K8S - Multiple Schedulers
+tmap.id: bbdf4813-bf68-4838-9953-d3be515b2de5
 type: text/vnd.tiddlywiki
 
 a kubernetes cluster isnt limited to a single scheduler, it's possible to develop your own scheduler to customize desired behaviour,

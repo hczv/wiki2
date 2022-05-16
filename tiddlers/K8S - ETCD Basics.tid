@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 1
 tags: [[K8S - Core Concepts]]
 title: K8S - ETCD Basics
+tmap.id: 6f47ba2d-f38d-4223-bf76-0f5481cd8b17
 type: text/vnd.tiddlywiki
 
 ! ETCD Basics

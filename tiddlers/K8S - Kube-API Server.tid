@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 3
 tags: [[K8S - Core Concepts]]
 title: K8S - Kube-API Server
+tmap.id: 2bec5186-1426-4823-a81d-a075fa2b6fa9
 type: text/vnd.tiddlywiki
 
 Primary management component in kubernetes

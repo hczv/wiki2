@@ -6,6 +6,7 @@ modifier: fwi
 sorting: 9
 tags: [[K8S - Scheduling]]
 title: K8S - Static Pods
+tmap.id: 4dd3ce31-a7a9-4a70-a07e-181e93346b15
 type: text/vnd.tiddlywiki
 
 Kubelet can manage a node independendly without any cluster or API server.
