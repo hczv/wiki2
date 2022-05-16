@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
+		<loc>https://onetwo.ren/wiki/#:CASE%2520-</loc>
+		<lastmod>2022-05-16</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://onetwo.ren/wiki/#:favicon.ico</loc>
 		<lastmod>2020-06-05</lastmod>
 		<changefreq>monthly</changefreq>
@@ -282,7 +288,7 @@
 	</url>
 	<url>
 		<loc>https://onetwo.ren/wiki/#:The%2520Barin</loc>
-		<lastmod>2022-05-15</lastmod>
+		<lastmod>2022-05-16</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
