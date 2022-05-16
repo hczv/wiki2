@@ -7,8 +7,14 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>https://onetwo.ren/wiki/#:Have%2520fun%2520with</loc>
+		<lastmod>2022-05-16</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://onetwo.ren/wiki/#:K8S</loc>
-		<lastmod>2022-05-15</lastmod>
+		<lastmod>2022-05-16</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -32,13 +38,13 @@
 	</url>
 	<url>
 		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Deployment%2520example.yaml</loc>
-		<lastmod>2022-05-15</lastmod>
+		<lastmod>2022-05-16</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Deployment%2520example2.yaml</loc>
-		<lastmod>2022-05-15</lastmod>
+		<lastmod>2022-05-16</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -278,6 +284,12 @@
 	<url>
 		<loc>https://onetwo.ren/wiki/#:The%2520Barin</loc>
 		<lastmod>2022-05-15</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:TiddlyMap!!</loc>
+		<lastmod>2022-05-16</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
