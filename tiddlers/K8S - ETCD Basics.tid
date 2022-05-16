@@ -1,7 +1,7 @@
 caption: ETCD Basics
 created: 20220515125418944
 creator: fwi
-modified: 20220515173834527
+modified: 20220516164019409
 modifier: fwi
 sorting: 1
 tags: [[K8S - Core Concepts]]
@@ -13,7 +13,7 @@ type: text/vnd.tiddlywiki
 
 distributed reliable key-value store, simple reliable and fast
 
-[img[K8S - key_value_store.png]]
+[img[K8S_key_value_store.png]]
 
 * key-value store
 
