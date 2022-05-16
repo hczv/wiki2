@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://onetwo.ren/wiki/#:/home/runner/work/wiki2/wiki2/tiddlers/K8S_key_value_store.png</loc>
-		<changefreq>monthly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>https://onetwo.ren/wiki/#:favicon.ico</loc>
 		<lastmod>2020-06-05</lastmod>
 		<changefreq>monthly</changefreq>
@@ -67,7 +62,7 @@
 	</url>
 	<url>
 		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520ETCD%2520Basics</loc>
-		<lastmod>2022-05-15</lastmod>
+		<lastmod>2022-05-16</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -222,6 +217,11 @@
 	</url>
 	<url>
 		<loc>https://onetwo.ren/wiki/#:K8S_etcd_structure_minimal.png</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:K8S_key_value_store.png</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
