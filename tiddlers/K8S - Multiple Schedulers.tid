@@ -1,8 +1,8 @@
 caption: Multiple Schedulers
 created: 20220515165833949
 creator: fwi
-modified: 20220515172224476
-modifier: fwi
+modified: 20220517123826130
+modifier: fw
 sorting: 10
 tags: [[K8S - Scheduling]]
 title: K8S - Multiple Schedulers

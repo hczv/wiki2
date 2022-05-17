@@ -1,8 +1,8 @@
 caption: Node Affinity
 created: 20220515134639767
 creator: fwi
-modified: 20220515144001550
-modifier: fwi
+modified: 20220517123855113
+modifier: fw
 sorting: 5
 tags: [[K8S - Scheduling]]
 title: K8S - Node Affinity
