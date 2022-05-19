@@ -1,66 +1,31 @@
 caption: Labels and Selectors
 created: 20220515150406506
 creator: fwi
-modified: 20220515150659059
-modifier: fwi
+modified: 20220519084953186
+modifier: fw
 sorting: 2
 tags: [[K8S - Scheduling]]
 title: K8S - Labels and Selectors
 tmap.id: 846544aa-f348-48e8-b9f3-2fa1869ce256
 type: text/vnd.tiddlywiki
+wysiwyg: yes
 
 Lables is defined pr pod, under the metadata section, in a key value format.
 
 [img[k8s_labels.png]]
 
-```yaml
-metadata:
-  name: simple-webapp
-  labels:
-    app: App1
-    function: Front-end
-```
-
 [img[k8s_selector.png]]
 
-```bash
-kubectl get pods --selector app=App1
-```
-
 which is used by selectors
-
 
 to create labels on a replicaset
 
 [img[k8s_labels_replicaset.png]]
 
-```bash
-kubectl get pods --show-labels
-kubectl get pods -l env=dev --no-headers | wc -l
-```
-```yaml
-metadata:
-  name: simple-webapp
-  labels:
-    app: App1
-    function: Front-end
-```
-
 [img[k8s_selector.png]]
 
-```bash
-kubectl get pods --selector app=App1
-```
-
 which is used by selectors
-
 
 to create labels on a replicaset
 
 [img[k8s_labels_replicaset.png]]
-
-
-```bash
-kubectl get pods --show-labels
-kubectl get pods -l env=dev --no-headers | wc -l
-```
