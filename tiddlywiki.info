@@ -30,6 +30,7 @@
       "index.html",
       "text/plain"
     ],
+<<<<<<< HEAD
     "readonlyexternalimages": [
       "--setfield",
       "[is[binary]] [type[application/msword]]",
@@ -46,6 +47,8 @@
       "index.html",
       "text/plain"
     ],
+=======
+>>>>>>> 45b81ec (Commit with Git-Sync-JS)
     "externaljs": [
       "--rendertiddler",
       "$:/core/templates/tiddlywiki5.js",
