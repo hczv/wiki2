@@ -1,20 +1,12 @@
 author: Felix Küppers
 core-version: >=5.1.5
-<<<<<<< HEAD
-=======
-created: 20211017092830214
->>>>>>> 45b81ec (Commit with Git-Sync-JS)
 dependents: $:/plugins/felixhayashi/vis
 depends: $:/plugins/felixhayashi/vis
 description: TiddlyMap – Map drawing and topic visualization for your wiki
 list: readme license
-<<<<<<< HEAD
 modified: 20220516120032581
 modifier: fw
 name: TiddlyMap
-=======
-modified: 20211017092830214
->>>>>>> 45b81ec (Commit with Git-Sync-JS)
 plugin-type: plugin
 released: Sun, 27 Sep 2020 20:47:13 GMT
 source: https://github.com/felixhayashi/TW5-TiddlyMap

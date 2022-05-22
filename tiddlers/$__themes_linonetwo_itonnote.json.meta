@@ -7,8 +7,4 @@ plugin-priority: 1
 plugin-type: theme
 title: $:/themes/linonetwo/itonnote
 type: application/json
-<<<<<<< HEAD
 version: 0.2.2
-=======
-version: 0.1.18
->>>>>>> 45b81ec (Commit with Git-Sync-JS)

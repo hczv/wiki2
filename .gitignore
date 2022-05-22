@@ -9,7 +9,4 @@ tiddlers/subwiki/
 # ignore some change from plugin that will only change "modified" field
 $__keepstate_utility_toggle-view-fields.tid
 tiddlers/$__Import.tid
-<<<<<<< HEAD
 tiddlers/drafts/
-=======
->>>>>>> 45b81ec (Commit with Git-Sync-JS)
