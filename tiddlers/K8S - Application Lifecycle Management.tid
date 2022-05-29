@@ -1,0 +1,28 @@
+caption: Application Lifecycle Management
+created: 20220529143054988
+creator: fwi
+modified: 20220529143345824
+modifier: fwi
+sorting: 5
+tags: K8S
+title: K8S - Application Lifecycle Management
+tmap.id: e1e43d70-09e9-4ab5-8a03-bff863d9faa4
+type: text/vnd.tiddlywiki
+
+\define create_label()
+$(sorting)$ - [[$(caption)$|$(title)$]]
+\end
+
+<$list filter="[tag[K8S - Application Lifecycle Management]nsort[sorting]]">
+<$set name=sorting value={{!!sorting}} >
+<$set name=caption value={{!!caption}} >
+<$set name=title value={{!!title}} >
+<$macrocall $name=details label=<<create_label>> src={{!!text}} status=closed/>
+</$set>
+</$set>
+</$set>
+</$list>
+
+Attached files:
+
+[[Kubernetes-CKA-0400 - Application Lifecycle Management.pdf]]

@@ -1,0 +1,22 @@
+caption: Managing Application Logs
+created: 20220529142640267
+creator: fwi
+modified: 20220529143025117
+modifier: fwi
+sorting: 2
+tags: [[K8S - Logging & Monitoring]]
+title: K8S - Managing Application Logs
+tmap.id: 1fc441c0-8fae-4158-b102-3096e5ddbe10
+type: text/vnd.tiddlywiki
+
+To read logs from a pod, you need to use a logs command like in docker
+
+```
+kubectl logs -f my-pod
+```
+
+if there is multiple containers in the pod, it is needed to specify which container we want the logs from
+
+```
+kubectl logs -f my-pod 2nd-container-in-pod
+```
