@@ -1,0 +1,29 @@
+caption: Deployment Strategy
+created: 20220529154338521
+creator: fwi
+modified: 20220529155445756
+modifier: fwi
+sorting: 2
+tags: [[K8S - Application Lifecycle Management]]
+title: K8S - Deployment Strategy
+tmap.id: 2e557e23-f51c-4d61-a3ac-06d477e7c033
+type: text/vnd.tiddlywiki
+
+In kubernetes there are two methods to deploy deployments,
+
+* Recreate
+*# Stops and deletes the running pods 
+*# Recreates the pods
+** this strategy has downtime between Stop and ready
+* Rolling Update
+** This is the preferred and default method
+*# Stops and deletes some pods
+*# Start the pods with the new version
+*# redo step 1-2 until all pods are running the newest version
+** this strategy has no downtime
+
+[img[K8S_deployment_strategy.png]]
+
+When using rolling update, it will create a new replicaset and deploy pods to it, and then stop pods in the original replicast set as the update procceeds
+
+to undo a deployment update `kubectl rollout undo my-deployment` this will destroy the pods in the new replicaset, and then start up the pods in the original replicaset
