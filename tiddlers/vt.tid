@@ -1,13 +1,15 @@
 created: 20220515130253472
 creator: fwi
-modified: 20220515190414220
+modified: 20220529143616832
 modifier: fwi
-tags: $:/tags/ViewTemplate
+tags: 
 title: vt
 tmap.id: 8eb938d9-2823-449c-8fc8-ac8fcdaf4fb3
 type: text/vnd.tiddlywiki
 
 <!--
+$:/tags/ViewTemplate
+
 \define tags()
 [[$(tag)$]]
 \end

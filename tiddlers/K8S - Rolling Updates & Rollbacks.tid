@@ -1,0 +1,27 @@
+caption: Rolling Updates & Rollbacks
+created: 20220529143633700
+creator: fwi
+modified: 20220529144623510
+modifier: fwi
+sorting: 1
+tags: [[K8S - Application Lifecycle Management]]
+title: K8S - Rolling Updates & Rollbacks
+tmap.id: 943dcda0-c133-4e68-92d1-2b906dc89d46
+type: text/vnd.tiddlywiki
+
+
+!! What is a Revision
+
+When a deployment is created, it triggers a "Rollout" which in turn creates a new "Rollout Revision" like "Revision 1".
+
+When a change i made, like changing image version of container in pods, a new "Revision" is created, called "Revision 2".
+
+This helps with keeping track of the deployments happening in the enviroment, and makes it possible to "Rollback" to a previous version of the deployment
+
+Check status of rollout `kubectl rollout status my-deployment`
+
+[img[K8S_rollout_status.png]]
+
+Check history of rollout `kubectl rollout history my-deployment`
+
+[img[K8S_rollout_history.png]]
