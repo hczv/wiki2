@@ -26,7 +26,7 @@
 	</url>
 	<url>
 		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Core%2520Concepts</loc>
-		<lastmod>2022-05-16</lastmod>
+		<lastmod>2022-05-29</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -103,6 +103,12 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Logging%2520&amp;%2520Monitoring</loc>
+		<lastmod>2022-05-29</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Manual%2520Scheduling</loc>
 		<lastmod>2022-05-15</lastmod>
 		<changefreq>monthly</changefreq>
@@ -158,7 +164,7 @@
 	</url>
 	<url>
 		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Scheduling</loc>
-		<lastmod>2022-05-16</lastmod>
+		<lastmod>2022-05-29</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -281,6 +287,33 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>https://onetwo.ren/wiki/#:Kubernetes-CKA-0100-Core-Concepts.pdf</loc>
+		<lastmod>2022-05-29</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:Kubernetes-CKA-0200-Scheduling.pdf</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:Kubernetes-CKA-0300-Logging-Monitoring.pdf</loc>
+		<lastmod>2022-05-29</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:kubernetes-services-updated.pdf</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:Networking.pdf</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://onetwo.ren/wiki/#:The%2520Barin</loc>
 		<lastmod>2022-05-16</lastmod>
 		<changefreq>monthly</changefreq>
@@ -307,6 +340,11 @@
 	<url>
 		<loc>https://onetwo.ren/wiki/#:TiddlyWikiIconWhite.png</loc>
 		<lastmod>2020-06-05</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:Udemy%2520Kubernetes%2520taints-tolerations.pdf</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
