@@ -115,6 +115,12 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Monitor%2520Cluster%2520Components</loc>
+		<lastmod>2022-05-29</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Multiple%2520Schedulers</loc>
 		<lastmod>2022-05-17</lastmod>
 		<changefreq>monthly</changefreq>
@@ -263,6 +269,16 @@
 	</url>
 	<url>
 		<loc>https://onetwo.ren/wiki/#:k8s_manual_scheduling_binding_api.png</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:K8S_metrics_server_install.png</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:K8S_metrics_server_view.png</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
