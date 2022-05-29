@@ -1,9 +1,9 @@
 caption: Core Concepts
 created: 20220515125309634
 creator: fwi
-modified: 20220516064854885
+modified: 20220529140413877
 modifier: fwi
-sorting: 1
+sorting: 2
 tags: K8S
 title: K8S - Core Concepts
 tmap.id: 69103445-bd8c-4097-938a-fe1d00d585ad
@@ -22,3 +22,10 @@ $(sorting)$ - [[$(caption)$|$(title)$]]
 </$set>
 </$set>
 </$list>
+
+
+Attached files:
+
+[[kubernetes-services-updated.pdf]]
+
+[[Kubernetes-CKA-0100-Core-Concepts.pdf]]

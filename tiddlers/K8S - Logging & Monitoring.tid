@@ -1,19 +1,19 @@
-caption: Scheduling
-created: 20220515125908046
+caption: Logging & Monitoring
+created: 20220529134932132
 creator: fwi
-modified: 20220529140155404
+modified: 20220529135847388
 modifier: fwi
-sorting: 3
+sorting: 4
 tags: K8S
-title: K8S - Scheduling
-tmap.id: 3b2cab8e-27bb-4b54-81db-5fe1ca94d425
+title: K8S - Logging & Monitoring
+tmap.id: 2913f2b6-9626-47a7-badc-b088bf7152a8
 type: text/vnd.tiddlywiki
 
 \define create_label()
 $(sorting)$ - [[$(caption)$|$(title)$]]
 \end
 
-<$list filter="[tag[K8S - Scheduling]nsort[sorting]]">
+<$list filter="[tag[K8S - Logging & Monitoring]nsort[sorting]]">
 <$set name=sorting value={{!!sorting}} >
 <$set name=caption value={{!!caption}} >
 <$set name=title value={{!!title}} >
@@ -25,8 +25,4 @@ $(sorting)$ - [[$(caption)$|$(title)$]]
 
 Attached files:
 
-[[Udemy Kubernetes taints-tolerations.pdf]]
-
-[[Kubernetes-CKA-0200-Scheduling.pdf]]
-
-[[Networking.pdf]]
+[[Kubernetes-CKA-0300-Logging-Monitoring.pdf]]
