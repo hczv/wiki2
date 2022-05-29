@@ -1,0 +1,26 @@
+caption: Monitor Cluster Components
+created: 20220529141011655
+creator: fwi
+modified: 20220529142042736
+modifier: fwi
+sorting: 1
+tags: [[K8S - Logging & Monitoring]]
+title: K8S - Monitor Cluster Components
+tmap.id: c1e44ef4-d62d-427b-9b34-637fe95d5a27
+type: text/vnd.tiddlywiki
+
+Kubernetes does not come with a full featured monitoring solution, there are though multiple solutions for this like:
+
+* METRICS Server
+* Prometheus
+* Elastic Stack
+* DATADOG (proprietary)
+* dynatrace (proprietary)
+
+!! Metrics Server
+* one pr cluster
+* in-memory monitoring (no historical data)
+
+[img[K8S_metrics_server_install.png]]
+
+[img[K8S_metrics_server_view.png]]
