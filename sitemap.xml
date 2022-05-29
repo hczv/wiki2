@@ -55,6 +55,12 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Deployment%2520Strategy</loc>
+		<lastmod>2022-05-29</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Deployments</loc>
 		<lastmod>2022-05-15</lastmod>
 		<changefreq>monthly</changefreq>
@@ -222,6 +228,11 @@
 	</url>
 	<url>
 		<loc>https://onetwo.ren/wiki/#:K8S_custom_scheduler_logs.png</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:K8S_deployment_strategy.png</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
