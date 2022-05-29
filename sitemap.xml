@@ -181,6 +181,12 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Rolling%2520Updates%2520&amp;%2520Rollbacks</loc>
+		<lastmod>2022-05-29</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://onetwo.ren/wiki/#:K8S%2520-%2520Scheduling</loc>
 		<lastmod>2022-05-29</lastmod>
 		<changefreq>monthly</changefreq>
@@ -300,6 +306,16 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
+		<loc>https://onetwo.ren/wiki/#:K8S_rollout_history.png</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://onetwo.ren/wiki/#:K8S_rollout_status.png</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
 		<loc>https://onetwo.ren/wiki/#:k8s_selector.png</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
@@ -384,7 +400,7 @@
 	</url>
 	<url>
 		<loc>https://onetwo.ren/wiki/#:vt</loc>
-		<lastmod>2022-05-15</lastmod>
+		<lastmod>2022-05-29</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
